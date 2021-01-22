@@ -1,11 +1,15 @@
 #include <iostream>
 #include"speechManager.h"
 #include<string>
+#include<ctime>
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
+	
+	//添加一个随机数种子
+	srand((unsigned int)time(NULL)); 
 	SpeechManager sm;	
 	
 	int choice =0;   //用于存储用户输入
@@ -19,8 +23,10 @@ int main(void) {
 				sm.startSpeech();
 				break;
 			case 2:
+				sm.showRecord();
 				break;
 			case 3:
+				sm.clearRecord();
 				break;
 			case 0:
 				sm.exitSystem();

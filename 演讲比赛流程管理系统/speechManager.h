@@ -9,6 +9,7 @@
 #include<numeric>
 #include<string>
 #include<iomanip>
+#include<fstream>
 using namespace std;
 
 //设计演讲比赛管理类
@@ -36,6 +37,27 @@ class SpeechManager{
 		
 		//比赛
 		void speechContest(); 
+		
+		//显示比赛结果
+		void showScore(); 
+		
+		//保存记录
+		void saveRecord(); 
+		
+		//读取记录
+		void loadRecord();
+		
+		//判断文件是否为空
+		bool fileIsEmpty;
+		
+		//往届记录
+		map<int,vector<string> >m_Record; 
+		
+		//显示往届得分
+		void showRecord(); 
+		
+		//清空记录
+		void clearRecord(); 
 		
 		//成员属性
 		vector<int>v1;    //第一轮选手
