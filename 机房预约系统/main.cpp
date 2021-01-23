@@ -12,20 +12,24 @@ using namespace std;
 void managerMenu(Identity* &manager){
 	while(true){
 		//调用管理员的子菜单
-		manager.operMenu(); 
+		manager->operMenu(); 
 		//将父类指针 转为子类指针 调用子类里其他借口
 		Manager *man=(Manager*) manager;
 		
-		int select;=0;
+		int select=0;
 		cin>>select; 
 		if(select==1){    //添加账号 
 			cout<<"添加账号"<<endl;
+			man->addPerson();
 		}else if(select==2){   //查看账号 
 			cout<<"查看账号"<<endl;
+			man->showPerson();
 		}else if(select==3){    //查看机房 
 			cout<<"查看机房"<<endl;
+			man->showComputer();
 		}else if(select==4){    //清空预约 
  			cout<<"清空预约"<<endl;
+ 			man->cleanFile();
 		} else {    //注销 
 			delete manager;
 			cout<<"注销成功"<<endl;
@@ -121,6 +125,7 @@ void LoginIn(string fileName,int type) {
 				system("cls");
 				//创建管理员对象
 				person = new Manager(name,pwd);
+				managerMenu(person);
 				return;
 			}
 		}

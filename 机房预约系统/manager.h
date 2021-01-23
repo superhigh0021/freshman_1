@@ -2,6 +2,11 @@
 #include<iostream>
 using namespace std;
 #include "identity.h"
+#include<string>
+#include<fstream>
+#include<vector>
+#include"student.h"
+#include"teacher.h"
 
 class Manager :public Identity {
 	public:
@@ -26,5 +31,12 @@ class Manager :public Identity {
 
 		//清空预约记录
 		void cleanFile();
-
+		
+		//初始化容器
+		void initVector();
+		
+		//学生容器
+		vector<Student> vStu;
+		//教师容器
+		vector<Teacher> vTea;
 };
