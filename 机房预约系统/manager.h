@@ -7,6 +7,9 @@ using namespace std;
 #include<vector>
 #include"student.h"
 #include"teacher.h"
+#include"globalFile.h"
+#include<algorithm>
+#include"computerRoom.h"
 
 class Manager :public Identity {
 	public:
@@ -39,4 +42,6 @@ class Manager :public Identity {
 		vector<Student> vStu;
 		//教师容器
 		vector<Teacher> vTea;
+		//机房信息 
+		vector<ComputerRoom>vCom; 
 };
