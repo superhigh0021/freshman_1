@@ -17,6 +17,7 @@ int main(void)
 	else
 	    cout<<"该年该月有28天"<<endl;
 	
+	system("pause");
 	return 0;
 	    
 }
