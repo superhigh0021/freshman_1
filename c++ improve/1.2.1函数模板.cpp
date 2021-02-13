@@ -15,7 +15,7 @@ int main(void) {
 	
 	char c='c',d='d';
 	Myswap<char>(c,d);
-	cout<<c<<' '<<d<<endl;
+	cout<<c<<'  '<<d<<endl;
 
 	return 0;
 }
