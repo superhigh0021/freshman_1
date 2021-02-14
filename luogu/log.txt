@@ -1,0 +1,11 @@
+------------------------Life is a Fight-----------------------------------
+
+
+D:\HFUT程序设计作业\课程设计\main.cpp	#include<stdlib.h>//system()的头文件 
+D:\HFUT程序设计作业\课程设计\main.cpp	int main(int argc, char** argv) {
+
+
+
+==========================================================
+File No.	Blank	Code	Commen	Function
+1		5	101	15	2
