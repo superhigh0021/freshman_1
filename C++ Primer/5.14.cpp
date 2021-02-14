@@ -20,5 +20,6 @@ int main(void) {
 		cout<<"出现最多的字符串是："<<maxString<<",次数是："<<maxCnt<<endl;
 	else cout<<"每个字符串都只出现了一次。"<<endl;
 
+	system("pause");
 	return 0;
 }

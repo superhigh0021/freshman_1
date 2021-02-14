@@ -11,11 +11,11 @@ void Myswap(T &a,T &b) {
 int main(void) {
 	int a=10,b=20;
 	Myswap(a,b);
-	cout<<a<<' '<<b<<endl;
+	cout<<a<<" "<<b<<endl;
 	
 	char c='c',d='d';
 	Myswap<char>(c,d);
-	cout<<c<<'  '<<d<<endl;
+	cout<<c<<' '<<d<<endl;
 
 	return 0;
 }
