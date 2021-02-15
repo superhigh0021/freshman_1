@@ -10,7 +10,7 @@ class Valentine{
 
 int main(void){
     Valentine darling;
-    darling.saylovetome();
+    darling.showlove();
     system("pause"); 
     return 0;
 }
