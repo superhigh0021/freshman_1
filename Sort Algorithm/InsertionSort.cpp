@@ -17,6 +17,7 @@ int main(void){
     InsertionSort(v,v.size());
     for(auto i:v)
     cout<<i<<' ';
+    
     system("pause");
     return 0;
 }
