@@ -32,7 +32,7 @@ int main(void) {
     vector<int> v = {1657, 4, 7, 83, 16, 3, 6, 9};
     MergeSort(v, 0, v.size() - 1);
     for (auto i : v) cout << i << ' ';
-
+    
     system("pause");
     return 0;
 }
